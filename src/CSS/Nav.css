@@ -1,0 +1,46 @@
+*{
+  background-color: #0A192F;
+}
+.navBar ul{
+  list-style-type: none;
+  margin: 10;
+  padding: 0;
+  overflow: hidden;
+}
+.navBar ul li{
+  float:right;
+}
+.navBar ul li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.navBar ul li a:hover{
+  color: #C3073F;
+}
+
+.navBar #special{
+  color: #C3073F;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.navBar #special:hover{
+  background-color: rgba(195, 8, 63, 0.1);
+}
+.navBar a{
+  text-decoration: none;
+}
+#logo{
+  color:white;
+  padding:20px;
+  font-size: 20px;
+}
+#logo:hover{
+    color: #C3073F;
+}
