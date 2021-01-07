@@ -1,0 +1,20 @@
+#title{
+  font-family: Simplifica;
+  color: #CCD6F6;
+  font-size: 25px;
+}
+#wrapper p {
+  color: #8892B0;
+}
+#wrapper{
+  margin: 10px;
+  color: white;
+  width: 600px;
+  margin: auto;
+}
+#content p {
+  font-size: 17px;
+}
+#color{
+  color: #00adb5;
+}

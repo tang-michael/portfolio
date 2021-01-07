@@ -2,7 +2,6 @@ import './CSS/Nav.css'
 function Nav(){
   return(
     <div class="navBar">
-
       <ul>
         <a id="logo" href="">MT</a>
         <li><a href="#" id="special">Resume</a></li>

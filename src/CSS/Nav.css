@@ -1,9 +1,11 @@
-*{
-  background-color: #0A192F;
+.navBar{
+  padding: 10px;
+  padding-right: 20px;
+
 }
 .navBar ul{
   list-style-type: none;
-  margin: 10;
+  margin: 20px;
   padding: 0;
   overflow: hidden;
 }
@@ -21,19 +23,19 @@
 }
 
 .navBar ul li a:hover{
-  color: #C3073F;
+  color: #00adb5;
 }
-
 .navBar #special{
-  color: #C3073F;
+  color: #00adb5;
   border-style: solid;
   border-radius: 10px;
 }
 
 .navBar #special:hover{
-  background-color: rgba(195, 8, 63, 0.1);
+  background-color: rgba(0, 173, 188, 0.1);
 }
 .navBar a{
+  transition: 0.5s;
   text-decoration: none;
 }
 #logo{
@@ -42,5 +44,5 @@
   font-size: 20px;
 }
 #logo:hover{
-    color: #C3073F;
+    color: #00adb5;
 }

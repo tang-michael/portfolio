@@ -3,22 +3,23 @@
   src: url("/src/Fonts/Specifica/simplifica_typeface1-webfont.woff") format("woff");
   src: url("/src/Fonts/Specifica/simplifica_typeface1-webfont.woff2") format("woff2");
 }
-h1, h2, h3{
+#name{
+  color: #CCD6F6;
+  font-size: 60px;
   font-family: Simplifica;
 }
-h1{
-  color: white;
-  font-size: 60px;
-}
-h2{
-  color: white;
+#major{
+  font-family: Simplifica;
+  color: #8892B0;
   font-size: 50px;
 }
-h3{
-  color: white;
+#college{
+  font-family: Simplifica;
+  color: #8892B0;
   font-size: 40px;
 }
 .container{
   padding: 20px;
   text-align: center;
+  margin-bottom: 110px;
 }
