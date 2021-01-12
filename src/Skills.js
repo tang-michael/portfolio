@@ -2,17 +2,22 @@ import './CSS/Skills.css'
 
 
 
-function Skills(){
-  function openCity(cityName) {
-      alert(cityName);
-      var i;
-      var x = document.getElementsByClassName("city");
-      for (i = 0; i < x.length; i++) {
+export default function Skills(){
+
+
+  function handleClick(cityName){
+    var i;
+    var x = document.getElementsByClassName("Categories");
+    for (i = 0; i < x.length; i++) {
+      if(x[i]){
         x[i].style.display = "none";
       }
-      document.getElementById(cityName).style.display = "block";
+    }
+    document.getElementById(cityName).style.display = "block";
   }
-
+  function test(){
+    console.log("test");
+  }
   return(
     <div id="wrapper-skills">
       <div id="title">
@@ -20,28 +25,23 @@ function Skills(){
       </div>
       <div id="content">
       <div class="tab-nav">
-        <button class="w3-bar-item w3-button" onclick={() => openCity('London')}>London</button>
-        <button class="w3-bar-item w3-button" onclick={() => openCity('Paris')}>Paris</button>
-        <button class="w3-bar-item w3-button" onclick={() => openCity('Tokyo')}>Tokyo</button>
+        <button class="w3-bar-item w3-button" onClick={() => handleClick('Languages')}>Languages</button>
+        <button class="w3-bar-item w3-button" onClick={() => handleClick('wc')}>Web / Client</button>
+        <button class="w3-bar-item w3-button" onClick={() => handleClick('Database')}>Database</button>
       </div>
-      <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
-      </div>
-
-      <div id="Paris" class="w3-container city">
-        <h2>Paris</h2>
+      <div id="Languages" className="Categories">
+        <h2>Languages</h2>
         <p>Paris is the capital of France.</p>
       </div>
-
-      <div id="Tokyo" class="w3-container city">
-        <h2>Tokyo</h2>
+      <div id="wc" className="Categories">
+        <h2>Web / Client</h2>
+        <p>London is the capital city of England.</p>
+      </div>
+      <div id="Database" className="Categories">
+        <h2>Database</h2>
         <p>Tokyo is the capital of Japan.</p>
       </div>
       </div>
     </div>
   );
 }
-
-
-export default Skills;
