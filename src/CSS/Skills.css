@@ -6,20 +6,143 @@
 
 #wc{
   display: none;
+  opacity: 0;
 }
 
 #Database{
   display: none;
+  opacity: 0;
+}
+.tab-nav{
+  float: left;
+  border-left: 1px solid #ccc;
+  width: 20%;
+  height: 300px;
+
 }
 .tab-nav button{
-  color: #8892B0;
+  display: block;
+  background-color: inherit;
+  color: white;
+  padding: 20px 14px;
+  width: 100%;
   border: none;
   outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
   font-size: 15px;
 }
+/* document.getElementById(tab).style.color = "#00adb5";
+document.getElementById(tab).style.background = "#39414f"; */
 .tab-nav button:hover{
   cursor: pointer;
-  color: #00adb5;
-  background-color: dark-grey;
+  background-color: #00adb5;
+}
 
+
+.Categories{
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+
+#title{
+  font-size: 35px;
+}
+
+.w3-grey{
+  height: 22px;
+  background-color: #00adb5;
+  border-radius: 5px;
+}
+
+.w3-border{
+  background-color: #39414F;
+  border-radius: 5px;
+}
+
+
+ /* appear - on page load */
+.fade-appear {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms linear;
+}
+
+/* enter */
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 5000ms linear 5000ms;
+}
+
+/* exit */
+.fade-exit {
+    opacity: 1;
+}
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 5000ms linear;
+}
+.fade-exit-done {
+  opacity: 0;
+}
+
+/* Languages tab transition*/
+.l-node-enter {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 300ms;
+}
+.l-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.l-node-exit {
+  visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+}
+.l-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+/* Web/Client tab transition*/
+.wc-node-enter {
+  opacity: 0;
+}
+.wc-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.wc-node-exit {
+  opacity: 1;
+}
+.wc-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+/* Database tab transition*/
+.db-node-enter {
+  opacity: 0;
+}
+.db-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.db-node-exit {
+  opacity: 1;
+}
+.db-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
 }

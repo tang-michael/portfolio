@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Nav from './Nav';
@@ -6,6 +6,7 @@ import Content from './Content'
 import About from './About'
 import Skills from './Skills'
 
+import { CSSTransition } from 'react-transition-group';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
